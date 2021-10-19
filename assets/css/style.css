@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins';
+    overflow: hidden;
+}
+
+
+/* .hero-bg {
+    background-image: url(../img/hero-bg.png) !important;
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+    z-index: 0;
+}
+
+.bg-gray {
+    background: #23272A;
+    position: relative;
+    min-height: 1014px;
+    max-width: 100%px;
+}
+
+.navbar {
+    display: flex;
+    padding-top: 30px;
+    display: grid;
+}
+
+.hero .navbar a {
+    color: white;
+    font-size: 17px;
+}
+
+a:hover {
+    text-decoration: none;
+} */
+
+
+/* Navbar */
+
+nav {
+    background: none;
+    height: 75px;
+    align-items: center;
+    padding-top: 20px;
+}
+
+nav .logo a {
+    color: #DEE5EA;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    padding-top: 20px;
+    list-style: none;
+    width: 20%;
+    justify-content: space-between;
+}
+
+nav .fa {
+    padding: 5px;
+    font-size: 25px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: #DEE5EA;
+    text-decoration: none;
+}
+
+nav .fa-instagram {
+    color: #DEE5EA;
+}
+
+
+/* Hammburger menu */
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -4px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.75s;
+}
+
+
+/* hero section */
+
+.hero {
+    background-image: url('../img/hero-bg.png') !important;
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
+    position: absolute;
+}
+
+.hero-bg {
+    background-image: url(../img/hero-bg.png) !important;
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
+    position: absolute;
+    max-width: 100%px;
+    z-index: 1;
+}
+
+.bg-gray {
+    background: #23272A;
+    position: relative;
+    min-height: 1014px;
+    max-width: 100%px;
+}
+
+
+/* Hamburger menu Animations */
+
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:last-child {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked~span:last-child {
+    transform: rotate(-45deg) translate(-1px, 0px);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+    transform: scale(0);
+}
+
+
+/* Responsive Breakpoint */
+
+@media (max-width: 1080px) {
+    nav ul {
+        width: 25%;
+    }
+}
+
+@media (max-width: 1200px) {
+    nav ul {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        width: 35%;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu-toggle {
+        display: flex;
+    }
+    nav ul {
+        position: absolute;
+        top: 0;
+        width: 100vh;
+        height: 50%;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        background-color: #7411A8;
+        z-index: 0;
+        transform: translateY(-100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+    nav .button a {
+        display: none;
+    }
+    nav ul.slide {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
