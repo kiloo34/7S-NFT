@@ -334,6 +334,9 @@ nav .fa-instagram {
     nav ul {
         width: 35%;
     }
+    nav.fa a {
+        padding: 2px;
+    }
     .header {
         margin: 40px 75px 50px 75px;
         grid-template-columns: 1fr;
@@ -349,6 +352,7 @@ nav .fa-instagram {
     }
     .button {
         text-align: center;
+        padding: 50px 10px 10px 10px;
     }
     .header-img {
         display: none;
