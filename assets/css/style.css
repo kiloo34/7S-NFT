@@ -57,6 +57,22 @@ nav .fa {
     text-decoration: none;
 }
 
+nav .button {
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.15);
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+nav .button a {
+    color: #DEE5EA;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 nav ul li a {
     color: #DEE5EA;
     text-decoration: none;
@@ -334,14 +350,14 @@ nav .fa-instagram {
     nav ul {
         width: 35%;
     }
-    nav.fa a {
-        padding: 2px;
+    nav a {
+        padding: 0px;
     }
     .header {
         margin: 40px 75px 50px 75px;
         grid-template-columns: 1fr;
     }
-    .desc-animate {
+    .desc-animate span {
         text-align: center;
     }
     .desc-title {
@@ -390,7 +406,7 @@ nav .fa-instagram {
         transition: all 1s;
         opacity: 0;
     }
-    nav .button a {
+    nav .button {
         display: none;
     }
     nav ul.slide {
@@ -409,7 +425,7 @@ nav .fa-instagram {
     .title-desc {
         margin-bottom: 20px;
     }
-    .button {
+    /* .button {
         margin-top: 15px;
-    }
+    } */
 }
